@@ -13,7 +13,13 @@ export default class SortedList {
             });
         }
       
-        get(pos) {}
+        get(pos) {
+            if (pos > this.items.length) {
+                throw new Error('OutOfBounds');
+            } else {
+                return this.items[pos];
+            };
+        }
       
         max() {}
       

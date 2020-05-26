@@ -5,7 +5,10 @@ export default class SortedList {
             this.length = 0;
         }
       
-        add(item) {}
+        add(item) {
+            this.items = [item];
+            this.length = this.items.length;
+        }
       
         get(pos) {}
       

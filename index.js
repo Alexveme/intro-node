@@ -6,8 +6,11 @@ export default class SortedList {
         }
       
         add(item) {
-            this.items = [item];
+            this.items.push(item);
             this.length = this.items.length;
+            this.items.sort(function (a, b) {
+                return a - b;
+            });
         }
       
         get(pos) {}
